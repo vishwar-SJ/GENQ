@@ -1,0 +1,21 @@
+{
+    "drug": "Abacavir",
+    "gene": "HLA-B",
+    "defining_variants": {
+        "rs2395029": {
+            "star_allele": "*57:01_tag",
+            "normal_allele": "T",
+            "variant_allele": "G",
+            "description": "HLA-B*57:01 tag SNP — hypersensitivity risk marker for abacavir"
+        }
+    },
+    "diplotype_to_phenotype": {
+        "negative/negative": "HLA-B*57:01 Negative",
+        "negative/*57:01_tag": "HLA-B*57:01 Positive",
+        "*57:01_tag/*57:01_tag": "HLA-B*57:01 Positive"
+    },
+    "phenotype_to_guidance": {
+        "HLA-B*57:01 Negative": "Low risk of abacavir hypersensitivity reaction. Abacavir may be prescribed as part of antiretroviral therapy.",
+        "HLA-B*57:01 Positive": "DO NOT prescribe abacavir. HLA-B*57:01 carriers have a high risk of potentially fatal hypersensitivity reaction. CPIC and FDA strongly recommend HLA-B*57:01 testing before prescribing. Use an alternative NRTI."
+    }
+}

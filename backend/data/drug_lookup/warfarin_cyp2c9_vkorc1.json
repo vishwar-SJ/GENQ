@@ -1,0 +1,61 @@
+{
+    "drug": "Warfarin",
+    "gene": "CYP2C9 / VKORC1",
+    "defining_variants": {
+        "rs1799853": {
+            "star_allele": "CYP2C9*2",
+            "normal_allele": "C",
+            "variant_allele": "T",
+            "description": "CYP2C9*2 — reduced function variant (Arg144Cys)"
+        },
+        "rs1057910": {
+            "star_allele": "CYP2C9*3",
+            "normal_allele": "A",
+            "variant_allele": "C",
+            "description": "CYP2C9*3 — reduced function variant (Ile359Leu)"
+        },
+        "rs9923231": {
+            "star_allele": "VKORC1 -1639G>A",
+            "normal_allele": "G",
+            "variant_allele": "A",
+            "description": "VKORC1 -1639G>A — associated with warfarin sensitivity"
+        }
+    },
+    "sensitivity_rules": [
+        {
+            "condition": "CYP2C9 *1/*1 + VKORC1 GG",
+            "cyp2c9_variants": 0,
+            "vkorc1_variant_count": 0,
+            "phenotype": "Normal Sensitivity",
+            "guidance": "Standard warfarin dosing. Typical maintenance dose 5-7 mg/day for most adults. Use standard dose-finding algorithms."
+        },
+        {
+            "condition": "CYP2C9 *1/*2 or *1/*3 + VKORC1 GG",
+            "cyp2c9_variants": 1,
+            "vkorc1_variant_count": 0,
+            "phenotype": "Mildly Sensitive",
+            "guidance": "Reduced warfarin dose may be needed (typically 3-5 mg/day). One CYP2C9 variant allele reduces metabolism. Monitor INR closely during initiation."
+        },
+        {
+            "condition": "CYP2C9 *1/*1 + VKORC1 GA or AA",
+            "cyp2c9_variants": 0,
+            "vkorc1_variant_count": 1,
+            "phenotype": "Moderately Sensitive",
+            "guidance": "Reduced warfarin dose recommended (typically 3-5 mg/day). VKORC1 variant increases warfarin sensitivity. More frequent INR monitoring advised."
+        },
+        {
+            "condition": "Multiple CYP2C9 + VKORC1 variants",
+            "cyp2c9_variants": 1,
+            "vkorc1_variant_count": 1,
+            "phenotype": "Highly Sensitive",
+            "guidance": "Significantly reduced warfarin dose needed (typically 1-3 mg/day). Both CYP2C9 and VKORC1 variants present. CPIC recommends 50-70% dose reduction with frequent INR monitoring. Consider pharmacogenomic dosing algorithm."
+        },
+        {
+            "condition": "CYP2C9 *2/*2, *2/*3, *3/*3 + any VKORC1",
+            "cyp2c9_variants": 2,
+            "vkorc1_variant_count": 0,
+            "phenotype": "Highly Sensitive",
+            "guidance": "Significantly reduced warfarin dose needed (typically 0.5-2 mg/day). Homozygous or compound heterozygous CYP2C9 reduced-function variants. Very high bleeding risk. CPIC recommends ≥50% dose reduction with very frequent INR monitoring."
+        }
+    ]
+}

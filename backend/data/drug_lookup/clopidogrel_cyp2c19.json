@@ -1,0 +1,43 @@
+{
+    "drug": "Clopidogrel",
+    "gene": "CYP2C19",
+    "defining_variants": {
+        "rs4244285": {
+            "star_allele": "*2",
+            "normal_allele": "G",
+            "variant_allele": "A",
+            "description": "CYP2C19*2 — loss-of-function variant (681G>A, splicing defect)"
+        },
+        "rs4986893": {
+            "star_allele": "*3",
+            "normal_allele": "G",
+            "variant_allele": "A",
+            "description": "CYP2C19*3 — loss-of-function variant (636G>A, premature stop codon)"
+        },
+        "rs12248560": {
+            "star_allele": "*17",
+            "normal_allele": "C",
+            "variant_allele": "T",
+            "description": "CYP2C19*17 — gain-of-function variant (increased transcription)"
+        }
+    },
+    "diplotype_to_phenotype": {
+        "*1/*1": "Normal Metabolizer",
+        "*1/*2": "Intermediate Metabolizer",
+        "*1/*3": "Intermediate Metabolizer",
+        "*1/*17": "Rapid Metabolizer",
+        "*2/*2": "Poor Metabolizer",
+        "*2/*3": "Poor Metabolizer",
+        "*3/*3": "Poor Metabolizer",
+        "*2/*17": "Intermediate Metabolizer",
+        "*3/*17": "Intermediate Metabolizer",
+        "*17/*17": "Ultra-rapid Metabolizer"
+    },
+    "phenotype_to_guidance": {
+        "Normal Metabolizer": "Standard clopidogrel dosing. No dose adjustment needed based on CYP2C19 genotype.",
+        "Intermediate Metabolizer": "Reduced clopidogrel activation expected. Consider alternative antiplatelet therapy (e.g., prasugrel or ticagrelor) if clinically indicated, per CPIC guidelines.",
+        "Poor Metabolizer": "Significantly reduced clopidogrel activation. CPIC recommends an alternative antiplatelet agent (prasugrel or ticagrelor) due to increased risk of adverse cardiovascular events.",
+        "Rapid Metabolizer": "Enhanced clopidogrel activation. Standard dosing is appropriate. May have increased bleeding risk at higher doses.",
+        "Ultra-rapid Metabolizer": "Enhanced clopidogrel activation. Standard dosing is appropriate. Monitor for increased bleeding risk."
+    }
+}

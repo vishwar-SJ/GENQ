@@ -1,0 +1,41 @@
+{
+    "drug": "Isoniazid",
+    "gene": "NAT2",
+    "defining_variants": {
+        "rs1801280": {
+            "star_allele": "*5",
+            "normal_allele": "T",
+            "variant_allele": "C",
+            "description": "NAT2*5 — slow acetylator variant (T341C, Ile114Thr)"
+        },
+        "rs1799930": {
+            "star_allele": "*6",
+            "normal_allele": "G",
+            "variant_allele": "A",
+            "description": "NAT2*6 — slow acetylator variant (G590A, Arg197Gln)"
+        },
+        "rs1799931": {
+            "star_allele": "*7",
+            "normal_allele": "G",
+            "variant_allele": "A",
+            "description": "NAT2*7 — slow acetylator variant (G857A, Gly286Glu)"
+        }
+    },
+    "diplotype_to_phenotype": {
+        "*4/*4": "Rapid Acetylator",
+        "*4/*5": "Intermediate Acetylator",
+        "*4/*6": "Intermediate Acetylator",
+        "*4/*7": "Intermediate Acetylator",
+        "*5/*5": "Slow Acetylator",
+        "*5/*6": "Slow Acetylator",
+        "*5/*7": "Slow Acetylator",
+        "*6/*6": "Slow Acetylator",
+        "*6/*7": "Slow Acetylator",
+        "*7/*7": "Slow Acetylator"
+    },
+    "phenotype_to_guidance": {
+        "Rapid Acetylator": "Standard isoniazid dosing (typically 5 mg/kg/day for adults). Rapid acetylators may have lower drug levels; monitor for treatment efficacy.",
+        "Intermediate Acetylator": "Standard isoniazid dosing is generally appropriate. Monitor liver function tests as recommended.",
+        "Slow Acetylator": "Increased risk of isoniazid-induced hepatotoxicity and peripheral neuropathy. Consider dose reduction or enhanced monitoring. Co-administer pyridoxine (vitamin B6) to reduce neuropathy risk."
+    }
+}

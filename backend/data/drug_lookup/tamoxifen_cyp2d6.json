@@ -1,0 +1,41 @@
+{
+    "drug": "Tamoxifen",
+    "gene": "CYP2D6",
+    "defining_variants": {
+        "rs3892097": {
+            "star_allele": "*4",
+            "normal_allele": "G",
+            "variant_allele": "A",
+            "description": "CYP2D6*4 — loss-of-function (most common null allele)"
+        },
+        "rs5030655": {
+            "star_allele": "*6",
+            "normal_allele": "T",
+            "variant_allele": "A",
+            "description": "CYP2D6*6 — loss-of-function (frameshift)"
+        },
+        "rs1065852": {
+            "star_allele": "*10",
+            "normal_allele": "C",
+            "variant_allele": "T",
+            "description": "CYP2D6*10 — decreased function"
+        }
+    },
+    "diplotype_to_phenotype": {
+        "*1/*1": "Normal Metabolizer",
+        "*1/*4": "Intermediate Metabolizer",
+        "*1/*6": "Intermediate Metabolizer",
+        "*1/*10": "Intermediate Metabolizer",
+        "*4/*4": "Poor Metabolizer",
+        "*4/*6": "Poor Metabolizer",
+        "*6/*6": "Poor Metabolizer",
+        "*4/*10": "Poor Metabolizer",
+        "*10/*10": "Intermediate Metabolizer"
+    },
+    "phenotype_to_guidance": {
+        "Normal Metabolizer": "Standard tamoxifen dosing (20 mg/day) is expected to produce adequate endoxifen levels for breast cancer therapy.",
+        "Intermediate Metabolizer": "Reduced endoxifen formation expected. Consider higher tamoxifen dose (40 mg/day) or switch to aromatase inhibitor if postmenopausal, per CPIC guidelines.",
+        "Poor Metabolizer": "Significantly reduced endoxifen formation. Tamoxifen may be less effective. CPIC recommends considering an aromatase inhibitor (postmenopausal) or alternative endocrine therapy.",
+        "Ultra-rapid Metabolizer": "Increased endoxifen formation. Standard dosing is appropriate. Monitor for increased side effects."
+    }
+}

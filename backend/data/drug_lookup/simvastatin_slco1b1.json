@@ -1,0 +1,22 @@
+{
+    "drug": "Simvastatin",
+    "gene": "SLCO1B1",
+    "defining_variants": {
+        "rs4149056": {
+            "star_allele": "*5",
+            "normal_allele": "T",
+            "variant_allele": "C",
+            "description": "SLCO1B1*5 (Val174Ala) — decreased transporter function, increased myopathy risk"
+        }
+    },
+    "diplotype_to_phenotype": {
+        "*1A/*1A": "Normal Function",
+        "*1A/*5": "Intermediate Function",
+        "*5/*5": "Poor Function"
+    },
+    "phenotype_to_guidance": {
+        "Normal Function": "Standard simvastatin dosing appropriate. No increased myopathy risk from SLCO1B1 genotype.",
+        "Intermediate Function": "Increased risk of simvastatin-induced myopathy. CPIC recommends avoiding simvastatin doses >20 mg/day. Consider an alternative statin (e.g., pravastatin, rosuvastatin).",
+        "Poor Function": "High risk of simvastatin-induced myopathy. CPIC recommends avoiding simvastatin entirely. Use an alternative statin with lower myopathy risk (e.g., pravastatin, rosuvastatin)."
+    }
+}
