@@ -85,3 +85,19 @@ The frontend runs on `http://localhost:5173` and proxies API calls to `http://lo
 ## License
 
 MIT
+
+## Deployment
+
+### Backend (Render)
+1. Go to [Render Dashboard](https://dashboard.render.com).
+2. Click **New** > **Blueprint**.
+3. Connect your GitHub repository.
+4. Render will automatically detect the ender.yaml file and provision the PostgreSQL database and FastAPI backend.
+
+### Frontend (Vercel)
+1. Go to [Vercel Dashboard](https://vercel.com).
+2. Click **Add New** > **Project**.
+3. Import your GitHub repository.
+4. Edit the **Root Directory** to rontend.
+5. In Environment Variables, add VITE_API_URL and set it to your Render backend URL (e.g., https://genq-backend.onrender.com/api).
+6. Click **Deploy**!

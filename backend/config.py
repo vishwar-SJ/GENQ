@@ -8,7 +8,10 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent
 
 # Database
-DATABASE_URL = os.getenv("DATABASE_URL", f"sqlite:///{BASE_DIR / 'genq.db'}")
+db_url = os.getenv("DATABASE_URL", f"sqlite:///{BASE_DIR / 'genq.db'}")
+if db_url.startswith("postgres://"):
+    db_url = db_url.replace("postgres://", "postgresql://", 1)
+DATABASE_URL = db_url
 
 # JWT Settings
 JWT_SECRET_KEY = os.getenv("JWT_SECRET_KEY", "genq-dev-secret-change-in-production-2026")

@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: genq-backend
+    env: python
+    buildCommand: "cd backend && pip install -r requirements.txt"
+    startCommand: "cd backend && uvicorn main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: genq-db
+          property: connectionString
+      - key: JWT_SECRET_KEY
+        generateValue: true
+      - key: PRODUCTION
+        value: "true"
+
+databases:
+  - name: genq-db
+    plan: free
